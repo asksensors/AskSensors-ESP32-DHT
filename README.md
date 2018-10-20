@@ -10,3 +10,5 @@ Requirements:
 Step-by-step tutorials:
 -
 - Connect ESP32 to the cloud: https://www.instructables.com/id/How-to-Connect-an-ESP32-to-the-IoT-Cloud/
+- Room Temperature and humidity monitoring: https://www.instructables.com/id/Room-Temperature-Humidity-Monitoring-With-the-ESP3/
+
