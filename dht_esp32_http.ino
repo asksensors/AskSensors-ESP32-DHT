@@ -20,9 +20,10 @@ HTTPClient ask;
 const char* ssid = "........";             // SSID
 const char* password = "..........";         // WIFI
 const char* apiKeyIn = "..............";      // API KEY IN
+const unsigned int writeInterval = 25000; // write interval (in ms)
 
 // ASKSENSORS config.
-const char* host = "asksensors.com";  // host
+const char* host = "api.asksensors.com";  // ASKSENSORS API host name
 const int httpPort = 80;      // port
 
 // DHT config.
@@ -128,7 +129,7 @@ void loop() {
   }else {
     
     // Create a URL for the request
-  String url = "https://asksensors.com/api.asksensors/write/";
+  String url = "https://api.asksensors.com/write/";
   url += apiKeyIn;
   url += "?module1=";
   url += myTemperature;
@@ -160,5 +161,5 @@ void loop() {
 
   client.stop();  // stop client
   
-  delay(20000);    // delay
+  delay(writeInterval);    // delay
 }
