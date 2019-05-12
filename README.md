@@ -1,6 +1,10 @@
 # ESP32 DHT HTTP
 DHT monitoring using ESP32 and AskSensors.
 
+Documentation:
+-
+- https://asksensors.com/doc/Documentation.html
+
 Requirements:
 -
 - Create AskSensors account: https://asksensors.com
